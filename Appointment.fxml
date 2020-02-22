@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="257.0" layoutY="262.0" mnemonicParsing="false" text="Confirm" />
+      <Button layoutX="347.0" layoutY="262.0" mnemonicParsing="false" text="Cancel" />
+      <TitledPane alignment="CENTER" prefHeight="27.0" prefWidth="600.0" text="Appointment Page" />
+      <TextField layoutX="257.0" layoutY="61.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter name" />
+      <TextField alignment="CENTER" layoutX="71.0" layoutY="61.0" text="Customer Name" />
+      <TextField alignment="CENTER" layoutX="71.0" layoutY="105.0" text="Date" />
+      <TextField layoutX="257.0" layoutY="105.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter Appointment Date" />
+      <TextField alignment="CENTER" layoutX="71.0" layoutY="151.0" text="Time" />
+      <TextField layoutX="257.0" layoutY="151.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter Appointment Time" />
+      <TextField alignment="CENTER" layoutX="71.0" layoutY="200.0" text="Type of Service" />
+      <TextField layoutX="257.0" layoutY="200.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter service requested" />
+      <Button layoutX="427.0" layoutY="262.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="51.0" text="Back" />
+      <ImageView fitHeight="170.0" fitWidth="161.0" layoutX="70.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/la%20tique.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

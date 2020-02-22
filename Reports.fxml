@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sidenavigation.SideBarController">
+   <children>
+      <TitledPane layoutY="-3.0" prefHeight="30.0" prefWidth="600.0" text="                                                                          Reports Page" AnchorPane.topAnchor="-3.0" />
+      <BorderPane fx:id="bp" layoutY="26.0" prefHeight="374.0" prefWidth="600.0">
+         <left>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #ffa500;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="56.0" prefWidth="118.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Transaction &#10;History" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#Invoice" prefHeight="56.0" prefWidth="118.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Invoice" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+                  <Button layoutX="10.0" layoutY="122.0" mnemonicParsing="false" onMouseClicked="#ServiceReport" prefHeight="56.0" prefWidth="118.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Service&#10;Report" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+               </children></VBox>
+         </left>
+         <center>
+            <AnchorPane fx:id="ap" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #add8e6;" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tv" layoutX="32.0" layoutY="30.0" prefHeight="254.0" prefWidth="443.0">
+                    <columns>
+                      <TableColumn fx:id="col_date" prefWidth="75.0" text="Date" />
+                      <TableColumn fx:id="col_type" prefWidth="75.0" text="Type" />
+                        <TableColumn fx:id="col_method" prefWidth="75.0" text="Method" />
+                        <TableColumn fx:id="col_amount" prefWidth="135.0" text="Amount/Position" />
+                        <TableColumn fx:id="col_status" prefWidth="82.0" text="Status" />
+                    </columns>
+                  </TableView>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

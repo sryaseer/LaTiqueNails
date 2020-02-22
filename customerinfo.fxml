@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="790.0" style="-fx-background-color: #add8e6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Home" />
+          <Menu mnemonicParsing="false" text="Exit" />
+        </menus>
+      </MenuBar>
+      <TableView layoutX="15.0" layoutY="45.0" prefHeight="472.0" prefWidth="760.0" AnchorPane.bottomAnchor="44.80000000000001" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+        <columns>
+          <TableColumn prefWidth="54.400028228759766" sortable="false" text="Select" />
+          <TableColumn prefWidth="223.9999542236328" text="First Name" />
+            <TableColumn prefWidth="162.79998779296875" text="Last Name" />
+            <TableColumn prefWidth="173.99993896484375" text="Email" />
+            <TableColumn prefWidth="144.39996337890625" text="Phone Number" />
+        </columns>
+      </TableView>
+      <SplitMenuButton layoutX="603.0" layoutY="539.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" text="Menu">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Edit Customer" />
+          <MenuItem mnemonicParsing="false" text="Delete Customer" />
+            <MenuItem mnemonicParsing="false" text="Add Customer" />
+        </items>
+      </SplitMenuButton>
+    <Button layoutX="743.0" layoutY="539.0" mnemonicParsing="false" text="OK" />
+   </children>
+</AnchorPane>

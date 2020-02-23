@@ -43,6 +43,10 @@
                         <TableColumn fx:id="col_status" prefWidth="82.0" text="Status" />
                     </columns>
                   </TableView>
+                  <Button layoutX="372.0" layoutY="317.0" mnemonicParsing="false" text="Delete" />
+                  <Button layoutX="434.0" layoutY="317.0" mnemonicParsing="false" text="Back" />
+                  <Button layoutX="246.0" layoutY="317.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="46.0" text="Add" />
+                  <Button layoutX="306.0" layoutY="317.0" mnemonicParsing="false" text="Modify" />
                </children>
                <opaqueInsets>
                   <Insets />

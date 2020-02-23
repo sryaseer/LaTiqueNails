@@ -120,6 +120,7 @@
                                     <Button mnemonicParsing="false" text="Edit" />
                                  </children>
                               </HBox>
+                              <Button layoutX="83.0" layoutY="317.0" mnemonicParsing="false" text="Back" />
                            </children>
                         </AnchorPane>
                     </items>

@@ -26,13 +26,14 @@
             <TableColumn prefWidth="144.39996337890625" text="Phone Number" />
         </columns>
       </TableView>
-      <SplitMenuButton layoutX="603.0" layoutY="539.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" text="Menu">
+      <SplitMenuButton layoutX="526.0" layoutY="539.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" text="Menu">
         <items>
           <MenuItem mnemonicParsing="false" text="Edit Customer" />
           <MenuItem mnemonicParsing="false" text="Delete Customer" />
             <MenuItem mnemonicParsing="false" text="Add Customer" />
         </items>
       </SplitMenuButton>
-    <Button layoutX="743.0" layoutY="539.0" mnemonicParsing="false" text="OK" />
+    <Button layoutX="679.0" layoutY="539.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="41.0" text="OK" />
+      <Button layoutX="735.0" layoutY="539.0" mnemonicParsing="false" text="Back" />
    </children>
 </AnchorPane>

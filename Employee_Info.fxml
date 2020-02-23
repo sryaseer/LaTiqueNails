@@ -30,8 +30,10 @@
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </Label>
-            <Button layoutX="511.0" layoutY="354.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Add" />
-            <Button layoutX="575.0" layoutY="354.0" mnemonicParsing="false" text="Delete" />
+            <Button layoutX="453.0" layoutY="353.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="59.0" text="Modify" />
+            <Button layoutX="523.0" layoutY="354.0" mnemonicParsing="false" text="Delete" />
+            <Button layoutX="585.0" layoutY="354.0" mnemonicParsing="false" text="Back" />
+            <Button layoutX="388.0" layoutY="354.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Add" />
       </children>
     </AnchorPane>
   </children>

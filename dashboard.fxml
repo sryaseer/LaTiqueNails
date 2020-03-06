@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="573.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Dashboard">
    <children>
-      <VBox layoutX="201.0" layoutY="85.0" prefHeight="588.0" prefWidth="846.0" style="-fx-background-color: white;" />
+      <VBox layoutX="291.0" layoutY="158.0" prefHeight="588.0" prefWidth="846.0" style="-fx-background-color: white;" />
       <VBox layoutY="85.0" prefHeight="588.0" prefWidth="201.0" style="-fx-background-color: orange;">
          <children>
             <Pane prefHeight="105.0" prefWidth="201.0">

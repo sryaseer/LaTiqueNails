@@ -11,22 +11,24 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button layoutX="257.0" layoutY="262.0" mnemonicParsing="false" text="Confirm" />
-      <Button layoutX="347.0" layoutY="262.0" mnemonicParsing="false" text="Cancel" />
-      <TitledPane alignment="CENTER" prefHeight="27.0" prefWidth="600.0" text="Appointment Page" />
-      <TextField layoutX="257.0" layoutY="61.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter name" />
-      <TextField alignment="CENTER" layoutX="71.0" layoutY="61.0" text="Customer Name" />
-      <TextField alignment="CENTER" layoutX="71.0" layoutY="105.0" text="Date" />
-      <TextField layoutX="257.0" layoutY="150.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter Appointment Time" />
-      <TextField alignment="CENTER" layoutX="71.0" layoutY="151.0" text="Time" />
-      <TextField alignment="CENTER" layoutX="71.0" layoutY="200.0" text="Type of Service" />
-      <Button layoutX="436.0" layoutY="261.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="51.0" text="Back" />
-      <ImageView fitHeight="170.0" fitWidth="161.0" layoutX="70.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+      <Button layoutX="428.0" layoutY="305.0" mnemonicParsing="false" text="Confirm" />
+      <Button layoutX="347.0" layoutY="305.0" mnemonicParsing="false" text="Cancel" />
+      <TitledPane alignment="CENTER" prefHeight="27.0" prefWidth="622.0" text="Appointment Page" />
+      <TextField layoutX="257.0" layoutY="61.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter Your FIrst Name" />
+      <TextField alignment="CENTER" layoutX="71.0" layoutY="61.0" text="First Name" />
+      <TextField alignment="CENTER" layoutX="71.0" layoutY="139.0" text="Date" />
+      <TextField layoutX="257.0" layoutY="176.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter Appointment Time" />
+      <TextField alignment="CENTER" layoutX="71.0" layoutY="177.0" text="Time" />
+      <TextField alignment="CENTER" layoutX="71.0" layoutY="219.0" text="Type of Service" />
+      <Button layoutX="260.0" layoutY="304.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="51.0" text="Back" />
+      <ImageView fitHeight="137.0" fitWidth="149.0" layoutX="77.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@la%20tique.jpg" />
          </image>
       </ImageView>
-      <DatePicker layoutX="257.0" layoutY="104.0" prefHeight="26.0" prefWidth="231.0" promptText="Choose Appointment Date" />
-      <ComboBox layoutX="260.0" layoutY="200.0" prefHeight="26.0" prefWidth="231.0" promptText="Select Service" />
+      <DatePicker layoutX="257.0" layoutY="138.0" prefHeight="26.0" prefWidth="231.0" promptText="Choose Appointment Date" />
+      <ComboBox layoutX="257.0" layoutY="218.0" prefHeight="26.0" prefWidth="231.0" promptText="Select Service" />
+      <TextField alignment="CENTER" layoutX="71.0" layoutY="99.0" text="Last Name" />
+      <TextField layoutX="257.0" layoutY="98.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter Your Last Name" />
    </children>
 </AnchorPane>

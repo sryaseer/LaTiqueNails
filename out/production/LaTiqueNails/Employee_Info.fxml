@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #add8e6;" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <TableView layoutX="13.0" layoutY="64.0" prefHeight="281.0" prefWidth="615.0">
+              <columns>
+                <TableColumn prefWidth="115.0" text="Last Name" />
+                <TableColumn minWidth="3.0" prefWidth="97.0" text="First Name" />
+                  <TableColumn minWidth="1.0" prefWidth="127.0" text="Phone Number" />
+                  <TableColumn minWidth="0.0" prefWidth="275.0" text="Address" />
+              </columns>
+            </TableView>
+            <Label layoutX="196.0" layoutY="27.0" prefHeight="17.0" prefWidth="309.0" text="Employee Information Screen">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="453.0" layoutY="353.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="59.0" text="Modify" />
+            <Button layoutX="523.0" layoutY="354.0" mnemonicParsing="false" text="Delete" />
+            <Button layoutX="585.0" layoutY="354.0" mnemonicParsing="false" text="Back" />
+            <Button layoutX="388.0" layoutY="354.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Add" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

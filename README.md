@@ -1,3 +1,3 @@
 # LaTiqueNails
 
-Files are located in src directory
+Please place all .java and .fxml files in the src/Sample directory.

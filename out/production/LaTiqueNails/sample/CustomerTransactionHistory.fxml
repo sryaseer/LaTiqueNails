@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TreeTableView layoutX="32.0" layoutY="58.0" prefHeight="284.0" prefWidth="376.0">
+        <columns>
+          <TreeTableColumn prefWidth="75.0" text="ID" />
+          <TreeTableColumn prefWidth="75.0" text="Date" />
+            <TreeTableColumn prefWidth="75.0" text="Time" />
+            <TreeTableColumn prefWidth="75.0" text="Service Type" />
+            <TreeTableColumn prefWidth="75.0" text="Cost" />
+            <TreeTableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TreeTableView>
+      <Pane prefHeight="58.0" prefWidth="600.0" style="-fx-background-color: rgb(245, 196, 20);">
+         <children>
+            <Label layoutX="29.0" layoutY="16.0" text="Customer Transaction History">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="345.0" layoutY="21.0" text="Transaction History For:" />
+            <Label layoutX="492.0" layoutY="19.0" text="x" />
+         </children>
+      </Pane>
+      <Button layoutX="484.0" layoutY="169.0" mnemonicParsing="false" text="Return" />
+   </children>
+</AnchorPane>

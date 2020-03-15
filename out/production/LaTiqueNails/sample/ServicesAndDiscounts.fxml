@@ -35,7 +35,7 @@
                         <CheckBox mnemonicParsing="false" text="Wax Brazillian" />
                         <CheckBox mnemonicParsing="false" text="Princess Pedicure &amp; Polish" />
                         <CheckBox mnemonicParsing="false" text="Princess Mani + Pedi" />
-                        <CheckBox mnemonicParsing="false" text="Princess Delux Pedi &amp; Polish" />
+                        <CheckBox mnemonicParsing="false" text="Princess Deluxe Pedi &amp; Polish" />
                         <CheckBox mnemonicParsing="false" text="Manicure Express" />
                         <CheckBox mnemonicParsing="false" text="Manicure Deluxe" />
                         <CheckBox mnemonicParsing="false" text="Manicure Shellac" />
@@ -88,12 +88,13 @@
                         </AnchorPane>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="433.0" prefWidth="282.0">
                            <children>
-                              <Button layoutX="65.0" layoutY="114.0" mnemonicParsing="false" text="Modify" />
-                              <Button layoutX="129.0" layoutY="114.0" mnemonicParsing="false" text="Delete" />
-                              <Button layoutX="6.0" layoutY="114.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="46.0" text="Add" />
-                              <Button layoutX="132.0" layoutY="204.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="50.0" text="Back" />
-                              <Button layoutX="64.0" layoutY="204.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Cancel" />
-                              <Button layoutX="10.0" layoutY="204.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="46.0" text="Ok" />
+                              <Button layoutX="13.0" layoutY="116.0" mnemonicParsing="false" text="Modify" />
+                              <Button layoutX="12.0" layoutY="151.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Delete" />
+                              <Button layoutX="10.0" layoutY="73.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="114.0" text="Add Discount" />
+                              <Button layoutX="14.0" layoutY="230.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Back" />
+                              <Button layoutX="12.0" layoutY="190.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Cancel" />
+                              <Button layoutX="14.0" layoutY="268.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Ok" />
+                              <Button layoutX="8.0" layoutY="34.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="114.0" text="Add Service" />
                            </children>
                         </AnchorPane>
                     </items>

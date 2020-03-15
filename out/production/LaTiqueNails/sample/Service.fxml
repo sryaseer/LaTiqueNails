@@ -7,14 +7,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="433.0" prefWidth="600.0" style="-fx-background-color: #add8e6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Service">
+<AnchorPane prefHeight="501.0" prefWidth="600.0" style="-fx-background-color: #add8e6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Service">
    <children>
       <Text layoutX="177.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top 3 Most Popular Services for 2019">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <TableView layoutX="41.0" layoutY="53.0" prefHeight="79.0" prefWidth="520.0" AnchorPane.bottomAnchor="268.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="53.0">
+      <TableView layoutX="41.0" layoutY="53.0" prefHeight="132.0" prefWidth="520.0" AnchorPane.bottomAnchor="316.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="53.0">
         <columns>
             <TableColumn prefWidth="61.0" text="ServiceID" />
           <TableColumn prefWidth="190.0" text="Name" />
@@ -23,12 +23,12 @@
             <TableColumn prefWidth="185.0" text="Appointments" />
         </columns>
       </TableView>
-      <Text layoutX="169.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top 3 Most Frequent Clients for 2019">
+      <Text layoutX="177.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top 3 Most Frequent Clients for 2019">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <TableView layoutX="32.0" layoutY="170.0" prefHeight="90.0" prefWidth="520.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
+      <TableView layoutX="40.0" layoutY="218.0" prefHeight="90.0" prefWidth="520.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
          <columns>
             <TableColumn prefWidth="56.0" text="ClientID" />
             <TableColumn prefWidth="166.0" text="Name" />
@@ -37,21 +37,21 @@
             <TableColumn prefWidth="92.0" text="Appointments" />
          </columns>
       </TableView>
-      <Text layoutX="185.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top 3 Most Active Staff for 2019">
+      <Text layoutX="193.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top 3 Most Active Staff for 2019">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <TableView layoutX="40.0" layoutY="296.0" prefHeight="90.0" prefWidth="520.0">
+      <TableView layoutX="40.0" layoutY="344.0" prefHeight="90.0" prefWidth="520.0">
          <columns>
             <TableColumn prefWidth="59.0" text="StaffID" />
             <TableColumn prefWidth="208.0" text="Name" />
             <TableColumn minWidth="0.0" prefWidth="252.0" text="Appointments" />
          </columns>
       </TableView>
-      <Button layoutX="266.0" layoutY="394.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="50.0" text="Add" />
-      <Button layoutX="344.0" layoutY="394.0" mnemonicParsing="false" text="Modify" />
-      <Button layoutX="424.0" layoutY="394.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Delete" />
-      <Button layoutX="509.0" layoutY="394.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="50.0" text="Back" />
+      <Button layoutX="266.0" layoutY="452.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="50.0" text="Add" />
+      <Button layoutX="344.0" layoutY="452.0" mnemonicParsing="false" text="Modify" />
+      <Button layoutX="424.0" layoutY="452.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Delete" />
+      <Button layoutX="509.0" layoutY="452.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="50.0" text="Back" />
    </children>
 </AnchorPane>

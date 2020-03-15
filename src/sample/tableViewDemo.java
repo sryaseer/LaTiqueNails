@@ -31,7 +31,7 @@ public class tableViewDemo extends Application {
 
     public void start(Stage stage) {
 
-        stage.setTitle("Students Data");
+        stage.setTitle("JOKER DATA");
         stage.setWidth(1000);
         stage.setHeight(500);
 

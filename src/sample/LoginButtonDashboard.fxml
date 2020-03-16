@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="401.0" prefWidth="640.0" style="-fx-background-color: #add8e6;">
+         <children>
+            <Label layoutX="216.0" layoutY="64.0" prefHeight="58.0" prefWidth="208.0" text="Select Login to Create">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="165.0" layoutY="157.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="101.0" text="Admin Login" />
+            <Button layoutX="374.0" layoutY="158.0" mnemonicParsing="false" text="Employee Login" />
+            <Button layoutX="517.0" layoutY="348.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="101.0" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -32,17 +32,7 @@ public class Controller implements Initializable {
 
     @FXML
     Label StatusLbl;
-
-    @FXML
-    void makeLogin(ActionEvent event) {
-        String username = UserNameTextField.getText();
-        String password = PasswordField.getText();
-        if (username.equals("User") && password.equals("Pass")) {
-            System.out.print("WORKS");
-        } else {
-            System.out.println("DOESNT");
-        }
-    }
+    
 
     final String hostname = "";
     final String dbName = "";
@@ -55,51 +45,6 @@ public class Controller implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
 
-        /*
-       LoginButton.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                try {
-
-                    String username = UserNameTextField.getText();
-                    String password = PasswordField.getText();
-                    if (username.equals("User") && password.equals("Pass")) {
-
-                        StatusLbl.setTextFill(Color.valueOf("black"));
-                        StatusLbl.setText("Login Success");
-
-
-                        Parent mainWindowParent = FXMLLoader.load(getClass().getResource("Reports.fxml"));
-                        Scene mainWindowScene = new Scene(mainWindowParent);
-
-                        Stage window = (Stage)((javafx.scene.Node)actionEvent.getSource()).getScene().getWindow();
-                        window.setScene(mainWindowScene);
-                        window.show();
-
-
-
-                        Stage primaryStage = new Stage();
-                        Parent root = FXMLLoader.load(getClass().getResource("Reports.fxml"));
-                        primaryStage.setTitle("LaTiqueNails");
-                        Scene scene = new Scene(root, 700, 450);
-                        primaryStage.setScene(scene);
-                        primaryStage.show();
-
-
-                    } else {
-                        StatusLbl.setTextFill(Color.valueOf("red"));
-                        StatusLbl.setText("Login Failed");
-
-                    }
-                }
-                catch (Exception ex) {
-                    System.out.println(ex.getMessage());
-
-                }
-
-        });
-
-         */
     }
 
     public void loginClicked(ActionEvent event) throws IOException {

@@ -15,6 +15,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -53,6 +54,8 @@ public class Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+
+        /*
        LoginButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
@@ -65,7 +68,7 @@ public class Controller implements Initializable {
                         StatusLbl.setTextFill(Color.valueOf("black"));
                         StatusLbl.setText("Login Success");
 
-                        /*
+
                         Parent mainWindowParent = FXMLLoader.load(getClass().getResource("Reports.fxml"));
                         Scene mainWindowScene = new Scene(mainWindowParent);
 
@@ -73,7 +76,7 @@ public class Controller implements Initializable {
                         window.setScene(mainWindowScene);
                         window.show();
 
-                         */
+
 
                         Stage primaryStage = new Stage();
                         Parent root = FXMLLoader.load(getClass().getResource("Reports.fxml"));
@@ -93,7 +96,30 @@ public class Controller implements Initializable {
                     System.out.println(ex.getMessage());
 
                 }
-            }
+
         });
+
+         */
+    }
+
+    public void loginClicked(ActionEvent event) throws IOException {
+        String username = UserNameTextField.getText();
+        String password = PasswordField.getText();
+        if (username.equals("User") && password.equals("Pass")) {
+
+            StatusLbl.setTextFill(Color.valueOf("black"));
+            StatusLbl.setText("Login Success");
+            Parent mainWindowParent = FXMLLoader.load(getClass().getResource("Reports.fxml"));
+            Scene mainWindowScene = new Scene(mainWindowParent);
+
+            Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+            window.setScene(mainWindowScene);
+            window.show();
+        }
+        else {
+            StatusLbl.setTextFill(Color.valueOf("red"));
+            StatusLbl.setText("Login Failed");
+
+        }
     }
 }

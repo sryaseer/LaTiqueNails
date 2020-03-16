@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="800.0" styleClass="theme" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="issuetrackinglite.IssueTrackingLiteController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="800.0" styleClass="theme" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
   <children>
     <SplitPane id="splitPaneHorizontal1" dividerPositions="0.25125" focusTraversable="true" prefHeight="535.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="65.0">
       <items>
@@ -57,20 +57,20 @@
     </SplitPane>
     <HBox id="HBox" alignment="CENTER" layoutX="493.0" layoutY="26.0" prefHeight="26.0" prefWidth="351.0" spacing="15.0" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="26.0">
       <children>
-            <Button id="button1" fx:id="newIssue1" onAction="#newIssueFired" prefHeight="26.0" prefWidth="47.0" text="Add" />
-        <Button id="button1" fx:id="saveIssue" onAction="#saveIssueFired" text="Modify" />
-        <Button id="button1" fx:id="newIssue" onAction="#newIssueFired" text="Delete" />
-            <Button id="button1" fx:id="saveIssue1" onAction="#saveIssueFired" prefHeight="26.0" prefWidth="50.0" text="Save" />
-            <Button id="button1" fx:id="newIssue11" onAction="#newIssueFired" prefHeight="26.0" prefWidth="49.0" text="Back" />
+            <Button id="button1" fx:id="newIssue1"  prefHeight="26.0" prefWidth="47.0" text="Add" />
+        <Button id="button1" fx:id="saveIssue"  text="Modify" />
+        <Button id="button1" fx:id="newIssue"  text="Delete" />
+            <Button id="button1" fx:id="saveIssue1"  prefHeight="26.0" prefWidth="50.0" text="Save" />
+            <Button id="button1" fx:id="newIssue11"  prefHeight="26.0" prefWidth="49.0" text="Back" />
       </children>
     </HBox>
     <ImageView id="IssueTrackingLite" fitHeight="26.0" fitWidth="194.0" layoutX="14.0" layoutY="20.0">
       <image>
-        <Image url="@Tique%20Logo.PNG" />
+        <Image url="@la tique.jpg" />
       </image>
     </ImageView>
   </children>
   <stylesheets>
-    <URL value="@../Downloads/IssueTrackingLite/IssueTrackingLite/src/issuetrackinglite/IssueTrackingLite.css" />
+   <!--<URL value="@../Downloads/IssueTrackingLite/IssueTrackingLite/src/issuetrackinglite/IssueTrackingLite.css" />-->
   </stylesheets>
 </AnchorPane>

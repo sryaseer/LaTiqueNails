@@ -17,7 +17,7 @@
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="450.0" prefWidth="700.0" VBox.vgrow="ALWAYS">
       <children>
-            <Button fx:id="LoginButton" layoutX="399.0" layoutY="303.0" mnemonicParsing="false" text="Login" />
+            <Button fx:id="LoginButton"  layoutX="399.0" layoutY="303.0" mnemonicParsing="false" text="Login" onAction="#loginClicked"/>
             <Label layoutX="225.0" layoutY="102.0" text="Login">
                <font>
                   <Font size="24.0" />

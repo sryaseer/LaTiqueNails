@@ -12,6 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -55,12 +56,25 @@ public class Controller implements Initializable {
        LoginButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                /*
-               String username = UserNameTextField.getText();
-               if (username.equals("User") && password.equals("Pass")) {
-                   System.out.print("WORKS");
+                try {
 
+                    String username = UserNameTextField.getText();
+                    String password = PasswordField.getText();
+                    if (username.equals("User") && password.equals("Pass")) {
+
+                        StatusLbl.setTextFill(Color.valueOf("black"));
                         StatusLbl.setText("Login Success");
+
+                        /*
+                        Parent mainWindowParent = FXMLLoader.load(getClass().getResource("Reports.fxml"));
+                        Scene mainWindowScene = new Scene(mainWindowParent);
+
+                        Stage window = (Stage)((javafx.scene.Node)actionEvent.getSource()).getScene().getWindow();
+                        window.setScene(mainWindowScene);
+                        window.show();
+
+                         */
+
                         Stage primaryStage = new Stage();
                         Parent root = FXMLLoader.load(getClass().getResource("Reports.fxml"));
                         primaryStage.setTitle("LaTiqueNails");
@@ -68,10 +82,17 @@ public class Controller implements Initializable {
                         primaryStage.setScene(scene);
                         primaryStage.show();
 
-                } else {
-                   System.out.println("DOESNT");
-                    //StatusLbl.setText("Login Failed");
-               }*/
+
+                    } else {
+                        StatusLbl.setTextFill(Color.valueOf("red"));
+                        StatusLbl.setText("Login Failed");
+
+                    }
+                }
+                catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+
+                }
             }
         });
     }

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sidenavigation.SideBarController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <TitledPane layoutY="1.0" prefHeight="26.0" prefWidth="600.0" text="                                                                          Reports Page" AnchorPane.topAnchor="0.0" />
       <BorderPane fx:id="bp" layoutY="26.0" prefHeight="374.0" prefWidth="600.0">
@@ -17,8 +17,8 @@
             <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #ffa500;" BorderPane.alignment="CENTER">
                <children>
                   <Button mnemonicParsing="false" prefHeight="56.0" prefWidth="118.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Transaction &#10;History" textFill="WHITE" />
-                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#Invoice" prefHeight="56.0" prefWidth="118.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Invoice" textFill="WHITE" />
-                  <Button layoutX="10.0" layoutY="122.0" mnemonicParsing="false" onMouseClicked="#ServiceReport" prefHeight="56.0" prefWidth="118.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Service&#10;Report" textFill="WHITE" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="118.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Invoice" textFill="WHITE" />
+                  <Button layoutX="10.0" layoutY="122.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="118.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Service&#10;Report" textFill="WHITE" />
                </children></VBox>
          </left>
          <center>

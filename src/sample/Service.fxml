@@ -14,13 +14,10 @@
             <Font size="15.0" />
          </font>
       </Text>
-      <TableView layoutX="41.0" layoutY="53.0" prefHeight="132.0" prefWidth="520.0" AnchorPane.bottomAnchor="316.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="53.0">
+      <TableView layoutX="99.0" layoutY="58.0" prefHeight="132.0" prefWidth="385.0" AnchorPane.bottomAnchor="311.0" AnchorPane.leftAnchor="99.0" AnchorPane.rightAnchor="116.0" AnchorPane.topAnchor="58.0">
         <columns>
-            <TableColumn prefWidth="61.0" text="ServiceID" />
-          <TableColumn prefWidth="190.0" text="Name" />
-          <TableColumn prefWidth="137.0" text="Internally Book" />
-            <TableColumn prefWidth="131.0" text="Booked Online" />
-            <TableColumn prefWidth="185.0" text="Appointments" />
+            <TableColumn prefWidth="97.60003662109375" text="Service ID" />
+          <TableColumn prefWidth="285.79998779296875" text="Service Name" />
         </columns>
       </TableView>
       <Text layoutX="177.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top 3 Most Frequent Clients for 2019">
@@ -28,13 +25,10 @@
             <Font size="15.0" />
          </font>
       </Text>
-      <TableView layoutX="40.0" layoutY="218.0" prefHeight="90.0" prefWidth="520.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
+      <TableView layoutX="101.0" layoutY="217.0" prefHeight="90.0" prefWidth="385.0" AnchorPane.leftAnchor="101.0" AnchorPane.rightAnchor="114.0">
          <columns>
-            <TableColumn prefWidth="56.0" text="ClientID" />
-            <TableColumn prefWidth="166.0" text="Name" />
-            <TableColumn prefWidth="116.0" text="Internally Booked" />
-            <TableColumn prefWidth="89.0" text="Booked Online" />
-            <TableColumn prefWidth="92.0" text="Appointments" />
+            <TableColumn prefWidth="93.60003662109375" text="Customer ID" />
+            <TableColumn prefWidth="289.79998779296875" text="Customer Name" />
          </columns>
       </TableView>
       <Text layoutX="193.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top 3 Most Active Staff for 2019">
@@ -42,14 +36,13 @@
             <Font size="15.0" />
          </font>
       </Text>
-      <TableView layoutX="40.0" layoutY="344.0" prefHeight="90.0" prefWidth="520.0">
+      <TableView layoutX="101.0" layoutY="342.0" prefHeight="90.0" prefWidth="385.0">
          <columns>
-            <TableColumn prefWidth="59.0" text="StaffID" />
-            <TableColumn prefWidth="208.0" text="Name" />
-            <TableColumn minWidth="0.0" prefWidth="252.0" text="Appointments" />
+            <TableColumn prefWidth="95.20001220703125" text="Employee ID" />
+            <TableColumn prefWidth="288.79998779296875" text="Employee Name" />
          </columns>
       </TableView>
-      <Button layoutX="266.0" layoutY="452.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="50.0" text="Add" />
+      <Button layoutX="266.0" layoutY="452.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="50.0" text="Home" />
       <Button layoutX="344.0" layoutY="452.0" mnemonicParsing="false" text="Modify" />
       <Button layoutX="424.0" layoutY="452.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Delete" />
       <Button layoutX="509.0" layoutY="452.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="50.0" text="Back" />

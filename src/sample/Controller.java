@@ -57,7 +57,7 @@ public class Controller implements Initializable {
 
             StatusLbl.setTextFill(Color.valueOf("black"));
             StatusLbl.setText("Login Success");
-            Parent mainWindowParent = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
+            Parent mainWindowParent = FXMLLoader.load(getClass().getResource("Reports.fxml"));
             Scene mainWindowScene = new Scene(mainWindowParent);
 
             Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
@@ -69,5 +69,18 @@ public class Controller implements Initializable {
             StatusLbl.setTextFill(Color.valueOf("Red"));
             StatusLbl.setText("Login Failed");
         }
+    }
+
+    public void nextButton(ActionEvent event) throws IOException
+    {
+        {
+            Parent ViewParent = FXMLLoader.load(getClass().getResource("Login Page.fxml"));
+            Scene ViewScene = new Scene(ViewParent);
+
+            Stage window = (Stage)((javafx.scene.Node) event.getSource()).getScene().getWindow();
+            window.setScene(ViewScene);
+            window.show();
+        }
+
     }
 }

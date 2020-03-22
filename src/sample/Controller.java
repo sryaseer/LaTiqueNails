@@ -17,12 +17,12 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
-import javax.swing.*;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Statement;
 import java.util.ResourceBundle;
 
-public class Controller implements Initializable {
+public class Controller extends DatabaseOperator implements Initializable {
 
     @FXML
     TextField UserNameTextField;
@@ -35,14 +35,9 @@ public class Controller implements Initializable {
 
     @FXML
     Label StatusLbl;
-    
 
-    final String hostname = "";
-    final String dbName = "";
-    final String port = "3306";
-    final String username = "";
-    final String password = "";
-    final String AWS_URL = "jdbc:mysql://" + hostname + ":" + port + "/" + dbName + "?user=" + username + "&password=" + password;
+
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -57,12 +52,14 @@ public class Controller implements Initializable {
 
             StatusLbl.setTextFill(Color.valueOf("black"));
             StatusLbl.setText("Login Success");
-            Parent mainWindowParent = FXMLLoader.load(getClass().getResource("Reports.fxml"));
-            Scene mainWindowScene = new Scene(mainWindowParent);
 
-            Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
-            window.setScene(mainWindowScene);
-            window.show();
+            // To change to a different scene use the code below for example
+            // This only works with actionEvents
+            // The number is the specific scene; will develop a list of what number is what later.
+            SceneChanger sc = new SceneChanger();
+            sc.ChangeScene(1,event);
+            // -End example code-
+
         }
         else {
             StatusLbl.setTextAlignment(TextAlignment.RIGHT);

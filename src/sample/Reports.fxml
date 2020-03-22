@@ -18,7 +18,7 @@
          </left>
          <center>
             <AnchorPane fx:id="ap" prefHeight="374.0" prefWidth="727.0" style="-fx-background-color: #add8e6;" BorderPane.alignment="CENTER">
-               <children>
+               <children>    
                   <TableView fx:id="tv" layoutX="32.0" layoutY="30.0" prefHeight="254.0" prefWidth="491.0">
                     <columns>
                         <TableColumn fx:id="col_date1" prefWidth="79.0" text="Account ID" />

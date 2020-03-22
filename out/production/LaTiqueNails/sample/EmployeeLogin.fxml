@@ -6,6 +6,7 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -24,15 +25,26 @@
             <TableColumn prefWidth="165.5999755859375" text="Employee Password" />
         </columns>
       </TableView>
-    <Button layoutX="435.0" layoutY="567.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="49.0" text="Back" />
-      <Button layoutX="501.0" layoutY="568.0" mnemonicParsing="false" text="Home" />
-      <Button layoutX="646.0" layoutY="568.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="52.0" text="Delete" />
-      <Button layoutX="569.0" layoutY="567.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" text="Modify" />
+    <Button layoutX="45.0" layoutY="286.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" text="Back" />
+      <Button layoutX="114.0" layoutY="286.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" text="Home" />
+      <Button layoutX="75.0" layoutY="351.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" text="Delete" />
+      <Button layoutX="187.0" layoutY="286.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" text="Modify" />
       <Label layoutX="398.0" layoutY="48.0" prefHeight="42.0" prefWidth="306.0" text="Employee Login Accounts" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Button layoutX="709.0" layoutY="567.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" text="Confrim" />
+      <Button layoutX="157.0" layoutY="351.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" text="Confrim" />
+      <TextField layoutX="14.0" layoutY="155.0" prefHeight="26.0" prefWidth="122.0" text="Employee Login ID" />
+      <TextField layoutX="14.0" layoutY="227.0" prefHeight="26.0" prefWidth="122.0" text="Employee Password" />
+      <TextField layoutX="14.0" layoutY="191.0" prefHeight="26.0" prefWidth="122.0" text="Employee Username" />
+      <TextField layoutX="140.0" layoutY="155.0" prefHeight="26.0" prefWidth="147.0" promptText="Enter ID" />
+      <TextField layoutX="140.0" layoutY="191.0" prefHeight="26.0" prefWidth="147.0" promptText="Enter a username" />
+      <TextField layoutX="140.0" layoutY="227.0" prefHeight="26.0" prefWidth="147.0" promptText="Enter a password" />
+      <Label layoutX="33.0" layoutY="103.0" prefHeight="42.0" prefWidth="214.0" text="Creating Accounts" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

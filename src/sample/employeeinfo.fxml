@@ -29,11 +29,10 @@
             <TableColumn prefWidth="140.800048828125" text="Email" />
         </columns>
       </TableView>
-    <Button layoutX="980.0" layoutY="585.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="41.0" text="OK" />
-      <Button layoutX="1036.0" layoutY="585.0" mnemonicParsing="false" text="Back" />
-      <Button layoutX="913.0" layoutY="585.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="52.0" text="Delete" />
-      <Button layoutX="836.0" layoutY="584.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" text="Modify" />
-      <Button layoutX="769.0" layoutY="584.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="52.0" text="Add" />
+    <Button layoutX="960.0" layoutY="584.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="52.0" text="Home" />
+      <Button layoutX="1025.0" layoutY="584.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="52.0" text="Back" />
+      <Button layoutX="890.0" layoutY="584.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="52.0" text="Delete" />
+      <Button layoutX="815.0" layoutY="584.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" text="Modify" />
       <Label layoutX="449.0" layoutY="52.0" prefHeight="42.0" prefWidth="354.0" text="Employee Information Screen" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="24.0" />

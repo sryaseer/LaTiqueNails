@@ -36,7 +36,15 @@ public class SceneChanger {
             window.show();
         }
 
-        if(sceneNumber == 4){ //transitions to login page.fxml
+        if(sceneNumber == 4){ //transition to AppointmentConfirmation.fxml
+            Parent mainWindowParent = FXMLLoader.load(getClass().getResource("AppointmentConfirmation.fxml"));
+            Scene mainWindowScene = new Scene(mainWindowParent);
+            Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+            window.setScene(mainWindowScene);
+            window.show();
+        }
+
+        if(sceneNumber == 5){ //transitions to Appointment page.fxml
             Parent mainWindowParent = FXMLLoader.load(getClass().getResource("Appointment.fxml"));
             Scene mainWindowScene = new Scene(mainWindowParent);
             Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
@@ -44,12 +52,31 @@ public class SceneChanger {
             window.show();
         }
 
-        if(sceneNumber == 5){ //transition to reports.fxml
-            Parent mainWindowParent = FXMLLoader.load(getClass().getResource("AppointmentConfirmation.fxml"));
+        if(sceneNumber == 6){ //transitions to AddCustomers page.fxml
+            Parent mainWindowParent = FXMLLoader.load(getClass().getResource("AddCustomers.fxml"));
             Scene mainWindowScene = new Scene(mainWindowParent);
             Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
             window.setScene(mainWindowScene);
             window.show();
         }
+
+        if(sceneNumber == 7){ //transitions to AddEmployee page.fxml
+            Parent mainWindowParent = FXMLLoader.load(getClass().getResource("AddEmployee.fxml"));
+            Scene mainWindowScene = new Scene(mainWindowParent);
+            Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+            window.setScene(mainWindowScene);
+            window.show();
+        }
+
+        if(sceneNumber == 8){ //transitions to ServicesAndDiscounts page.fxml
+            Parent mainWindowParent = FXMLLoader.load(getClass().getResource("ServicesAndDiscounts.fxml"));
+            Scene mainWindowScene = new Scene(mainWindowParent);
+            Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+            window.setScene(mainWindowScene);
+            window.show();
+        }
+
+
+
     }
 }

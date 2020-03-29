@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
             Parent root = FXMLLoader.load(getClass().getResource("Login Page.fxml"));
-            primaryStage.setTitle("LaTiqueNails");
+            primaryStage.setTitle("La Tique Nails");
             Scene scene = new Scene(root, 1280, 720);
             primaryStage.setScene(scene);
             primaryStage.show();

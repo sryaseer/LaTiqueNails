@@ -33,5 +33,12 @@ public class SceneChanger {
             window.setScene(mainWindowScene);
             window.show();
         }
+        if(sceneNumber == 4){ //transitions to login page.fxml
+            Parent mainWindowParent = FXMLLoader.load(getClass().getResource("Appointment.fxml"));
+            Scene mainWindowScene = new Scene(mainWindowParent);
+            Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+            window.setScene(mainWindowScene);
+            window.show();
+        }
     }
 }

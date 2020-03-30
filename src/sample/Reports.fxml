@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <TitledPane layoutY="1.0" prefHeight="26.0" prefWidth="640.0" text="                                                                          Reports Page" AnchorPane.topAnchor="0.0" />
       <BorderPane fx:id="bp" layoutY="26.0" prefHeight="374.0" prefWidth="640.0">
@@ -32,7 +37,7 @@
                   <Button layoutX="202.0" layoutY="314.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="50.0" text="Add" />
                   <Button layoutX="276.0" layoutY="314.0" mnemonicParsing="false" text="Modify" />
                   <Button layoutX="350.0" layoutY="314.0" mnemonicParsing="false" text="Delete" />
-                  <Button layoutX="423.0" layoutY="314.0" mnemonicParsing="false" onAction="#nextButton" prefHeight="26.0" prefWidth="50.0" text="Back" />
+                  <Button layoutX="423.0" layoutY="314.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="50.0" text="Back" />
                </children>
                <opaqueInsets>
                   <Insets />

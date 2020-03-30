@@ -16,48 +16,42 @@ public class DashboardController extends DatabaseOperator implements Initializab
 
     public void appointmentClicked(ActionEvent event) throws IOException{
         SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(5, event);
+        sc.ChangeScene("Appointment.fxml", event);
     }
 
     public void customerInfoClicked(ActionEvent event) throws IOException{
         SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(6,event);
+        sc.ChangeScene("AddCustomers.fxml",event);
     }
 
     public void employeeInfoClicked(ActionEvent event) throws IOException{
         SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(7,event);
+        sc.ChangeScene("AddEmployee.fxml",event);
     }
 
     public void discountPromotionClicked(ActionEvent event) throws IOException{
         SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(8,event);
+        sc.ChangeScene("ServicesAndDiscounts.fxml",event);
     }
 
     public void invoiceClicked(ActionEvent event) throws IOException{
         SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(9,event);
+        sc.ChangeScene("Invoice.fxml",event);
     }
 
     public void reportClicked(ActionEvent event) throws IOException{
         SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(10,event);
+        sc.ChangeScene("Report.fxml",event);
     }
-/*
-    //don't know where goes to
-    //Rizz: We will ignore this for now
-    public void serviceClicked(ActionEvent event) throws IOException{
-        SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(11,event);
-    }
-*/
+
     public void accountAccessClicked(ActionEvent event) throws IOException{
         SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(11,event);
+        sc.ChangeScene("LoginButtonDashboard.fxml",event);
     }
 
     public void logOutClicked(ActionEvent event) throws IOException{
         SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(3,event);
+        sc.ChangeScene("Login Page.fxml",event);
     }
+
 }

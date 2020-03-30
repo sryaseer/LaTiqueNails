@@ -54,7 +54,7 @@ public class Controller extends DatabaseOperator implements Initializable {
             // This only works with actionEvents
             // The number is the specific scene; will develop a list of what number is what later.
             SceneChanger sc = new SceneChanger();
-            sc.ChangeScene(1,event);
+            sc.ChangeScene("dashboard.fxml",event);
             // -End example code-
 
         }

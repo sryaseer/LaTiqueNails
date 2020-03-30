@@ -15,6 +15,6 @@ public class AddCustomersController extends DatabaseOperator implements Initiali
 
     public void backButtonClicked(ActionEvent event) throws IOException {
         SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(1,event);
+        sc.ChangeScene("dashboard.fxml",event);
     }
 }

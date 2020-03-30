@@ -11,7 +11,14 @@ import java.io.IOException;
 //main function of this class is to change scenes.
 
 public class SceneChanger {
-    public void ChangeScene(int sceneNumber, ActionEvent event) throws IOException {
+    public void ChangeScene(String scene, ActionEvent event) throws IOException {
+        Parent mainWindowParent = FXMLLoader.load(getClass().getResource(scene));
+        Scene mainWindowScene = new Scene(mainWindowParent);
+        Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+        window.setScene(mainWindowScene);
+        window.show();
+
+        /*
         if(sceneNumber == 1){ //transitions to dashboard.fxml
             Parent mainWindowParent = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
             Scene mainWindowScene = new Scene(mainWindowParent);
@@ -96,6 +103,8 @@ public class SceneChanger {
             window.setScene(mainWindowScene);
             window.show();
         }
+
+         */
 
 
 

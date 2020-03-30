@@ -10,7 +10,7 @@ import java.util.ResourceBundle;
 public class LoginButtonDashboardController extends DatabaseOperator implements Initializable {
     public void backButtonClicked(ActionEvent event) throws IOException {
         SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(1,event);
+        sc.ChangeScene("dashboard.fxml",event);
     }
 
     @Override

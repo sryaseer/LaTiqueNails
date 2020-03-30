@@ -68,28 +68,28 @@ public class SceneChanger {
             window.show();
         }
 
-        if(sceneNumber == 8){ //transitions to ServicesAndDiscounts page.fxml
+        if(sceneNumber == 8){ //transitions to ServicesAndDiscounts.fxml
             Parent mainWindowParent = FXMLLoader.load(getClass().getResource("ServicesAndDiscounts.fxml"));
             Scene mainWindowScene = new Scene(mainWindowParent);
             Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
             window.setScene(mainWindowScene);
             window.show();
         }
-        if(sceneNumber == 9){ //transitions to ServicesAndDiscounts page.fxml
+        if(sceneNumber == 9){ //transitions to Invoice.fxml
             Parent mainWindowParent = FXMLLoader.load(getClass().getResource("Invoice.fxml"));
             Scene mainWindowScene = new Scene(mainWindowParent);
             Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
             window.setScene(mainWindowScene);
             window.show();
         }
-        if(sceneNumber == 10){ //transitions to ServicesAndDiscounts page.fxml
+        if(sceneNumber == 10){ //transitions to Report.fxml
             Parent mainWindowParent = FXMLLoader.load(getClass().getResource("Report.fxml"));
             Scene mainWindowScene = new Scene(mainWindowParent);
             Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
             window.setScene(mainWindowScene);
             window.show();
         }
-        if(sceneNumber == 11){ //transitions to ServicesAndDiscounts page.fxml
+        if(sceneNumber == 11){ //transitions to LoginButtonDashboard.fxml
             Parent mainWindowParent = FXMLLoader.load(getClass().getResource("LoginButtonDashboard.fxml"));
             Scene mainWindowScene = new Scene(mainWindowParent);
             Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();

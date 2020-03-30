@@ -44,6 +44,7 @@ public class DashboardController extends DatabaseOperator implements Initializab
         sc.ChangeScene(10,event);
     }
 
+    //don't know where goes to
     public void serviceClicked(ActionEvent event) throws IOException{
         SceneChanger sc = new SceneChanger();
         sc.ChangeScene(11,event);
@@ -51,7 +52,7 @@ public class DashboardController extends DatabaseOperator implements Initializab
 
     public void accountAccessClicked(ActionEvent event) throws IOException{
         SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(12,event);
+        sc.ChangeScene(11,event);
     }
 
     public void logOutClicked(ActionEvent event) throws IOException{

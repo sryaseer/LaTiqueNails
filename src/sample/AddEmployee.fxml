@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddEmployeeController">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -91,7 +91,7 @@
             </TextField>
             <Button layoutX="400.0" layoutY="333.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Add" />
             <Button layoutX="535.0" layoutY="333.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Next" />
-            <Button layoutX="328.0" layoutY="333.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Back" />
+            <Button layoutX="328.0" layoutY="333.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="26.0" prefWidth="54.0" text="Back" />
             <Button layoutX="467.0" layoutY="333.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Clear" />
             <TextField layoutX="285.0" layoutY="151.0" prefHeight="26.0" prefWidth="270.0" promptText="Enter Employee Address" />
             <TextField alignment="CENTER" layoutX="81.0" layoutY="151.0" text="Employee Address">

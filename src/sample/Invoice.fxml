@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.InvoiceController">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -70,7 +70,7 @@
             <Button layoutX="152.0" layoutY="170.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="121.0" text="Price" />
             <Button layoutX="369.0" layoutY="298.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Add" />
             <Button layoutX="561.0" layoutY="297.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Next" />
-            <Button layoutX="495.0" layoutY="297.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Back" />
+            <Button layoutX="495.0" layoutY="297.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="26.0" prefWidth="54.0" text="Back" />
             <ComboBox layoutX="312.0" layoutY="96.0" prefHeight="26.0" prefWidth="174.0" promptText="Select Technician " />
             <ComboBox layoutX="312.0" layoutY="131.0" prefHeight="26.0" prefWidth="174.0" promptText="Select Services" />
             <DatePicker layoutX="312.0" layoutY="54.0" promptText="Choose Date" />

@@ -7,14 +7,14 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class AddCustomersController extends DatabaseOperator implements Initializable {
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-
-    }
-
+public class LoginButtonDashboardController extends DatabaseOperator implements Initializable {
     public void backButtonClicked(ActionEvent event) throws IOException {
         SceneChanger sc = new SceneChanger();
         sc.ChangeScene(1,event);
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
     }
 }

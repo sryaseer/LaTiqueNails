@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginButtonDashboardController">
    <children>
       <AnchorPane prefHeight="401.0" prefWidth="640.0" style="-fx-background-color: #add8e6;">
          <children>
@@ -17,7 +17,7 @@
             </Label>
             <Button layoutX="165.0" layoutY="157.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="101.0" text="Admin Login" />
             <Button layoutX="374.0" layoutY="158.0" mnemonicParsing="false" text="Employee Login" />
-            <Button layoutX="517.0" layoutY="348.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="101.0" text="Back" />
+            <Button layoutX="517.0" layoutY="348.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="26.0" prefWidth="101.0" text="Back" />
          </children>
       </AnchorPane>
    </children>

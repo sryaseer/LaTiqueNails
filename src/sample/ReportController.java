@@ -17,4 +17,8 @@ public class ReportController extends DatabaseOperator implements Initializable 
         SceneChanger sc = new SceneChanger();
         sc.ChangeScene(1,event);
     }
+    public void ReportsClicked(ActionEvent event) throws IOException{
+        SceneChanger sc = new SceneChanger();
+        sc.ChangeScene(2, event);
+    }
 }

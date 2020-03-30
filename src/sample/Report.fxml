@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TitledPane?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ReportController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ReportController">
    <children>
       <TitledPane layoutY="1.0" prefHeight="26.0" prefWidth="600.0" text="                                                                          Reports Page" AnchorPane.topAnchor="0.0" />
       <BorderPane fx:id="bp" layoutY="26.0" prefHeight="374.0" prefWidth="600.0">
@@ -22,12 +20,11 @@
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="322.0" layoutY="127.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="116.0" text="Service Report" textAlignment="CENTER">
+                  <Button layoutX="322.0" layoutY="127.0" mnemonicParsing="false" onAction="#ReportsClicked" prefHeight="60.0" prefWidth="116.0" text="Service Report" textAlignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Button layoutX="448.0" layoutY="298.0" mnemonicParsing="false" text="OK" />
                   <Button layoutX="493.0" layoutY="298.0" mnemonicParsing="false" onAction="#backButtonClicked" text="Back" />
                </children>
             </AnchorPane>

@@ -17,4 +17,6 @@ public class AppointmentController extends DatabaseOperator implements Initializ
         SceneChanger sc = new SceneChanger();
         sc.ChangeScene(1,event);
     }
+
+
 }

@@ -14,11 +14,9 @@ public class ReportController extends DatabaseOperator implements Initializable 
     }
 
     public void backButtonClicked(ActionEvent event) throws IOException {
-        SceneChanger sc = new SceneChanger();
-        sc.ChangeScene("dashboard.fxml",event);
+        ChangeScene("dashboard.fxml",event);
     }
     public void ReportsClicked(ActionEvent event) throws IOException{
-        SceneChanger sc = new SceneChanger();
-        sc.ChangeScene("Report.fxml", event);
+        ChangeScene("Report.fxml", event);
     }
 }

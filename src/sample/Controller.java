@@ -53,8 +53,7 @@ public class Controller extends DatabaseOperator implements Initializable {
             // To change to a different scene use the code below for example
             // This only works with actionEvents
             // The number is the specific scene; will develop a list of what number is what later.
-            SceneChanger sc = new SceneChanger();
-            sc.ChangeScene("dashboard.fxml",event);
+            ChangeScene("dashboard.fxml",event);
             // -End example code-
 
         }

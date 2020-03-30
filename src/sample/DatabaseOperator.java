@@ -1,5 +1,12 @@
 package sample;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
@@ -17,5 +24,12 @@ public class DatabaseOperator {
     final String AWS_URL = "jdbc:mysql://" + hostname + ":" + port + "/" + dbName + "?user=" + username + "&password=" + password;
     final String DB_URL = "jdbc:derby:EmployeeDB;create=true";
 
+    public void ChangeScene(String scene, ActionEvent event) throws IOException {
+        Parent mainWindowParent = FXMLLoader.load(getClass().getResource(scene));
+        Scene mainWindowScene = new Scene(mainWindowParent);
+        Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+        window.setScene(mainWindowScene);
+        window.show();
+    }
 
 }

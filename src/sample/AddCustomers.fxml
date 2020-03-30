@@ -62,10 +62,10 @@
           </font>
         </Label>
             <TextField layoutX="285.0" layoutY="44.0" prefHeight="26.0" prefWidth="270.0" promptText="Enter Customer ID" />
-            <TextField layoutX="285.0" layoutY="184.0" prefHeight="26.0" prefWidth="270.0" promptText="Enter Customer Email" />
-            <TextField layoutX="285.0" layoutY="146.0" prefHeight="26.0" prefWidth="270.0" promptText="Enter Customer Phone Number" />
-            <TextField layoutX="285.0" layoutY="112.0" prefHeight="26.0" prefWidth="270.0" promptText="Enter Customer Last Name" />
-            <TextField layoutX="285.0" layoutY="80.0" prefHeight="26.0" prefWidth="270.0" promptText="Enter Customer First Name" />
+            <TextField fx:id="emailBox" layoutX="285.0" layoutY="184.0" prefHeight="26.0" prefWidth="270.0" promptText="Enter Customer Email" />
+            <TextField fx:id="phoneNumberBox" layoutX="285.0" layoutY="146.0" prefHeight="26.0" prefWidth="270.0" promptText="Enter Customer Phone Number" />
+            <TextField fx:id="lastNameBox" layoutX="285.0" layoutY="112.0" prefHeight="26.0" prefWidth="270.0" promptText="Enter Customer Last Name" />
+            <TextField fx:id="firstNameBox" layoutX="285.0" layoutY="80.0" prefHeight="26.0" prefWidth="270.0" promptText="Enter Customer First Name" />
             <TextField alignment="CENTER" layoutX="81.0" layoutY="47.0" text="Customer ID">
                <font>
                   <Font name="System Bold" size="12.0" />
@@ -91,7 +91,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </TextField>
-            <Button layoutX="365.0" layoutY="252.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Add" />
+            <Button layoutX="365.0" layoutY="252.0" mnemonicParsing="false" onAction="#addClicked" prefHeight="26.0" prefWidth="54.0" text="Add" />
             <Button layoutX="500.0" layoutY="252.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Next" />
             <Button layoutX="293.0" layoutY="252.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="26.0" prefWidth="54.0" text="Back" />
             <Button layoutX="432.0" layoutY="252.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="54.0" text="Clear" />
@@ -100,6 +100,10 @@
                   <Image url="@customers.jpg" />
                </image>
             </ImageView>
+            <Label layoutX="569.0" layoutY="85.0" fx:id="invalidFirstName"/>
+            <Label layoutX="569.0" layoutY="119.0" fx:id="invalidLastName"/>
+            <Label layoutX="569.0" layoutY="153.0" fx:id="invalidPhone"/>
+            <Label layoutX="569.0" layoutY="189.0" fx:id="invalidEmail" />
       </children>
     </AnchorPane>
   </children>

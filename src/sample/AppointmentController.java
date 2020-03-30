@@ -38,7 +38,7 @@ public class AppointmentController extends DatabaseOperator implements Initializ
         TypeOfService.setItems(Service);
         AppTime.setItems(Time);
     }
-
+//test
     public void backButtonClicked(ActionEvent event) throws IOException {
         SceneChanger sc = new SceneChanger();
         sc.ChangeScene(1,event);

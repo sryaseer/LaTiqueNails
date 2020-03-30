@@ -75,6 +75,27 @@ public class SceneChanger {
             window.setScene(mainWindowScene);
             window.show();
         }
+        if(sceneNumber == 9){ //transitions to ServicesAndDiscounts page.fxml
+            Parent mainWindowParent = FXMLLoader.load(getClass().getResource("Invoice.fxml"));
+            Scene mainWindowScene = new Scene(mainWindowParent);
+            Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+            window.setScene(mainWindowScene);
+            window.show();
+        }
+        if(sceneNumber == 10){ //transitions to ServicesAndDiscounts page.fxml
+            Parent mainWindowParent = FXMLLoader.load(getClass().getResource("Report.fxml"));
+            Scene mainWindowScene = new Scene(mainWindowParent);
+            Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+            window.setScene(mainWindowScene);
+            window.show();
+        }
+        if(sceneNumber == 11){ //transitions to ServicesAndDiscounts page.fxml
+            Parent mainWindowParent = FXMLLoader.load(getClass().getResource("LoginButtonDashboard.fxml"));
+            Scene mainWindowScene = new Scene(mainWindowParent);
+            Stage window = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+            window.setScene(mainWindowScene);
+            window.show();
+        }
 
 
 

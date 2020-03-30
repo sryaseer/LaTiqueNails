@@ -31,9 +31,6 @@ public class Controller extends DatabaseOperator implements Initializable {
     PasswordField PasswordField;
 
     @FXML
-    Button LoginButton;
-
-    @FXML
     Label StatusLbl;
 
 
@@ -57,7 +54,7 @@ public class Controller extends DatabaseOperator implements Initializable {
             // This only works with actionEvents
             // The number is the specific scene; will develop a list of what number is what later.
             SceneChanger sc = new SceneChanger();
-            sc.ChangeScene(4,event);
+            sc.ChangeScene(1,event);
             // -End example code-
 
         }
@@ -68,16 +65,4 @@ public class Controller extends DatabaseOperator implements Initializable {
         }
     }
 
-    public void nextButton(ActionEvent event) throws IOException
-    {
-        {
-            Parent ViewParent = FXMLLoader.load(getClass().getResource("Login Page.fxml"));
-            Scene ViewScene = new Scene(ViewParent);
-
-            Stage window = (Stage)((javafx.scene.Node) event.getSource()).getScene().getWindow();
-            window.setScene(ViewScene);
-            window.show();
-        }
-
-    }
 }

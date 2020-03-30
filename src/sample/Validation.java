@@ -10,9 +10,10 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.paint.Color;
 
 public class Validation {
-    //TEXTFILE
+    //TEXTFILE------------------------------------------------------------------
     public static boolean textFieldNotEmpty(TextField i){
         boolean r = false;
         if (i.getText() != null && !i.getText().isEmpty()){
@@ -20,7 +21,7 @@ public class Validation {
         }
         return r;
     }
-
+    //Empty Format
     public static boolean textFieldNotEmpty(TextField i, Label l, String sValudationText){
         boolean r = true;
         String c = null;
@@ -29,10 +30,38 @@ public class Validation {
             c = sValudationText;
         }
         l.setText(c);
+        l.setOpacity(1);
+        l.setTextFill(Color.valueOf("red"));
+        return r;
+    }
+    // Number Format
+    public static boolean numberFormat(TextField i, Label l, String sValudationText){
+        boolean r = true;
+        String c = null;
+        if(!i.getText().matches("[0-9]+")){
+            r = false;
+            c = sValudationText;
+        }
+        l.setText(c);
+        l.setOpacity(1);
+        l.setTextFill(Color.valueOf("Blue"));
+        return r;
+    }
+    //Email Format
+    public static boolean emailFormat(TextField i, Label l, String sValudationText){
+        boolean r = true;
+        String c = null;
+        if(!i.getText().matches("[a-zA-z0-9._-]+@[a-zA-Z0-9]+\\.com")){
+            r = false;
+            c = sValudationText;
+        }
+        l.setText(c);
+        l.setOpacity(1);
+        l.setTextFill(Color.valueOf("Blue"));
         return r;
     }
 
-    //DATEPICKER
+    //DATEPICKER------------------------------------------------------------------
     public static boolean dataPickerNotEmpty(DatePicker i){
         boolean r = false;
         if (i.getValue() != null && !i.getValue().equals(null)){
@@ -48,10 +77,12 @@ public class Validation {
             c = sValudationText;
         }
         l.setText(c);
+        l.setOpacity(1);
+        l.setTextFill(Color.valueOf("red"));
         return r;
     }
 
-    //COMBO BOX
+    //COMBO BOX------------------------------------------------------------------
     public static boolean comboBoxNotEmpty(ComboBox i){
         boolean r = false;
         if (i.getValue() != null && !i.getValue().equals(null)){
@@ -68,6 +99,9 @@ public class Validation {
             c = sValudationText;
         }
         l.setText(c);
+        l.setOpacity(1);
+        l.setTextFill(Color.valueOf("red"));
         return r;
+
     }
 }

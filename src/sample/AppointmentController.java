@@ -16,12 +16,9 @@ import java.util.ResourceBundle;
 
 public class AppointmentController extends DatabaseOperator implements Initializable {
 
-    @FXML public Label VerifyLabel, FValidate, DateValidate, TimeValidate, ServValidate, LValidate;
-    @FXML public TextField FName, LName;
+    @FXML public Label VerifyLabel, FValidate, DateValidate, TimeValidate, ServValidate, LValidate, VPhoneNum, text_email, VPhoneNumFormat;
+    @FXML public TextField FName, LName, PhoneNumBox, txt_Numeric;
     @FXML public DatePicker AppDate;
-
-
-
     // Combo Box
     @FXML
     public ComboBox<String> TypeOfService;
@@ -33,34 +30,54 @@ public class AppointmentController extends DatabaseOperator implements Initializ
             ,"7:00", "7:30","8:00", "8:30","9:00", "9:30","10:00", "10:30","11:00"
     ); //Options for the Combo Box
 
+    String fname;
+    String lname;
+    String phoneNum;
+    LocalDate servicedate;
+
+    boolean Vfnamev;
+    boolean Vlname;
+    boolean Vservicedate;
+    boolean Vservicetime;
+    boolean Vservicetype;
+    boolean VphoneNum;
+
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         TypeOfService.setItems(Service);
         AppTime.setItems(Time);
     }
-//test
+
+
     public void backButtonClicked(ActionEvent event) throws IOException {
         SceneChanger sc = new SceneChanger();
         sc.ChangeScene(1,event);
     }
 
     public void grabInfo(ActionEvent event){
-        String fname = FName.getText(); //store the info of first name //Textfield
-        String lname = LName.getText(); //store the info of last name //Textfield
-        LocalDate servicedate = AppDate.getValue(); //Datepicker
+        fname = FName.getText(); //store the info of first name //Textfield
+        lname = LName.getText(); //store the info of last name //Textfield
+        phoneNum = PhoneNumBox.getText();
+        servicedate = AppDate.getValue(); //Datepicker
         AppTime.getValue(); //combobox
         TypeOfService.getValue(); //Combobox
+        String email = txt_Numeric.getText();
 
-        boolean Vfnamev = Validation.textFieldNotEmpty(FName, FValidate, "Required");
-        boolean Vlname = Validation.textFieldNotEmpty(LName, LValidate, "Required");
-        boolean Vservicedate = Validation.dataPickerNotEmpty(AppDate, DateValidate, "Required");
-        boolean Vservicetime = Validation.comboBoxNotEmpty(AppTime, TimeValidate, "Required");
-        boolean Vservicetype = Validation.comboBoxNotEmpty(TypeOfService, ServValidate, "Required");
+        Vfnamev = Validation.textFieldNotEmpty(FName, FValidate, "Required");
+        Vlname = Validation.textFieldNotEmpty(LName, LValidate, "Required");
+        Vservicedate = Validation.dataPickerNotEmpty(AppDate, DateValidate, "Required");
+        Vservicetime = Validation.comboBoxNotEmpty(AppTime, TimeValidate, "Required");
+        Vservicetype = Validation.comboBoxNotEmpty(TypeOfService, ServValidate, "Required");
+        VphoneNum = Validation.textFieldNotEmpty(PhoneNumBox, VPhoneNum, "Required");
+
+        boolean vEmail = Validation.emailFormat(txt_Numeric, text_email, "proper email");
+     //   boolean number_format = Validation.numberFormat(PhoneNumBox, VPhoneNumFormat, "Number Format");
 
         //Validation that all fields are filled or prompt user to
-        if (Vfnamev && Vlname && Vservicedate && Vservicetime && Vservicetype)
+        if (Vfnamev && Vlname && Vservicedate && Vservicetime && Vservicetype && VphoneNum && vEmail)
         {
-            VerifyLabel.setText(fname + " " + lname + " Date:" + servicedate.toString()
+            VerifyLabel.setText(fname + " " + lname + " Phone:" + phoneNum + " Date:" + servicedate.toString()
                     +"  Time:" + AppTime.getValue() + "  Service:" + TypeOfService.getValue());
         }
 
@@ -71,7 +88,10 @@ public class AppointmentController extends DatabaseOperator implements Initializ
         VerifyLabel.setText("");
         FName.setText("");
         LName.setText("");
+        PhoneNumBox.setText("");
         AppTime.setValue(null);
         AppDate.setValue(null);
+        TypeOfService.setValue(null);
+        txt_Numeric.setText("");
     }
 }

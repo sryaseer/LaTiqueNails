@@ -48,7 +48,7 @@ public class AppointmentController extends DatabaseOperator implements Initializ
         data.add(new DataStore("Bob","Dylan", "12345","t@g.com","Male"));
         return data;
     }
-
+//test
     String fname;
     String lname;
     String phoneNum;

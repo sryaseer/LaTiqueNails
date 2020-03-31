@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AppointmentController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AppointmentController">
    <children>
-      <MenuBar prefHeight="25.0" prefWidth="777.0">
+      <MenuBar maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="1280.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
@@ -26,39 +25,61 @@
           </Menu>
         </menus>
       </MenuBar>
-      <Label layoutX="50.0" layoutY="158.0" prefHeight="27.0" prefWidth="102.0" text="Phone Number" />
-      <Button layoutX="33.0" layoutY="34.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="137.0" text="Current Appointments" />
-      <Button fx:id="Clear" layoutX="404.0" layoutY="347.0" mnemonicParsing="false" onAction="#clearButton" text="Clear" />
-      <TextField fx:id="FName" layoutX="214.0" layoutY="89.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter FIrst Name" />
-      <Button layoutX="329.0" layoutY="347.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="26.0" prefWidth="51.0" text="Back" />
-      <ImageView fitHeight="137.0" fitWidth="149.0" layoutX="596.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@la%20tique.jpg" />
-         </image>
-      </ImageView>
-      <DatePicker fx:id="AppDate" layoutX="214.0" layoutY="194.0" prefHeight="26.0" prefWidth="231.0" promptText="Choose Appointment Date" />
-      <ComboBox fx:id="TypeOfService" layoutX="214.0" layoutY="274.0" prefHeight="26.0" prefWidth="231.0" promptText="Select Service" />
-      <TextField fx:id="LName" layoutX="214.0" layoutY="126.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter Last Name" />
-      <Button fx:id="AddButton" layoutX="257.0" layoutY="347.0" mnemonicParsing="false" onAction="#grabInfo" prefHeight="26.0" prefWidth="51.0" text="Add" />
-      <Label fx:id="VerifyLabel" layoutX="63.0" layoutY="476.0" prefHeight="49.0" prefWidth="601.0">
+      <Label layoutX="14.0" layoutY="129.0" prefHeight="27.0" prefWidth="102.0" text="Phone Number" />
+      <Button fx:id="Clear" layoutX="286.0" layoutY="383.0" mnemonicParsing="false" onAction="#clearButton" text="Clear" />
+      <TextField fx:id="FName" layoutX="123.0" layoutY="57.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter FIrst Name" />
+      <Button layoutX="148.0" layoutY="382.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="26.0" prefWidth="51.0" text="Back" />
+      <DatePicker fx:id="AppDate" layoutX="123.0" layoutY="237.0" prefHeight="26.0" prefWidth="231.0" promptText="Choose Appointment Date" />
+      <ComboBox fx:id="TypeOfService" layoutX="123.0" layoutY="317.0" prefHeight="26.0" prefWidth="231.0" promptText="Select Service" />
+      <TextField fx:id="LName" layoutX="123.0" layoutY="94.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter Last Name" />
+      <Button fx:id="AddButton" layoutX="213.0" layoutY="382.0" mnemonicParsing="false" onAction="#grabInfo" prefHeight="26.0" prefWidth="51.0" text="Add" />
+      <Label fx:id="VerifyLabel" layoutX="29.0" layoutY="637.0" prefHeight="49.0" prefWidth="601.0">
          <font>
             <Font name="System Bold" size="18.0" />
          </font></Label>
-      <ComboBox fx:id="AppTime" layoutX="214.0" layoutY="233.0" prefHeight="26.0" prefWidth="231.0" promptText="Select Timing" />
-      <Label fx:id="FValidate" layoutX="463.0" layoutY="89.0" opacity="0.0" prefHeight="27.0" prefWidth="114.0" text="Fname V" />
-      <Label fx:id="LValidate" layoutX="463.0" layoutY="126.0" opacity="0.0" prefHeight="27.0" prefWidth="114.0" text="Lname V" />
-      <Label fx:id="DateValidate" layoutX="463.0" layoutY="194.0" opacity="0.0" prefHeight="27.0" prefWidth="114.0" text="Date V" />
-      <Label fx:id="TimeValidate" layoutX="463.0" layoutY="234.0" opacity="0.0" prefHeight="27.0" prefWidth="114.0" text="Time V" />
-      <Label fx:id="ServValidate" layoutX="463.0" layoutY="274.0" opacity="0.0" prefHeight="27.0" prefWidth="114.0" text="ToF V" />
-      <Label layoutX="50.0" layoutY="91.0" prefHeight="27.0" prefWidth="102.0" text="First Name" />
-      <Label layoutX="50.0" layoutY="126.0" prefHeight="27.0" prefWidth="102.0" text="Last Name" />
-      <Label layoutX="50.0" layoutY="195.0" prefHeight="27.0" prefWidth="102.0" text="Appointment Date" />
-      <Label layoutX="50.0" layoutY="234.0" prefHeight="27.0" prefWidth="159.0" text="Schedule Timing" />
-      <Label layoutX="50.0" layoutY="275.0" prefHeight="27.0" prefWidth="159.0" text="Type of Service" />
-      <TextField fx:id="PhoneNumBox" layoutX="214.0" layoutY="159.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter Phone Number" />
-      <Label fx:id="VPhoneNum" layoutX="463.0" layoutY="159.0" opacity="0.0" prefHeight="27.0" prefWidth="114.0" text="Phone V" />
-      <TextField fx:id="txt_Numeric" layoutX="495.0" layoutY="302.0" />
-      <Label fx:id="text_email" layoutX="506.0" layoutY="352.0" prefHeight="37.0" prefWidth="149.0" text="Label" />
-      <Label fx:id="VPhoneNum1" layoutX="463.0" layoutY="159.0" opacity="0.0" prefHeight="27.0" prefWidth="114.0" text="Phone V" />
+      <ComboBox fx:id="AppTime" layoutX="123.0" layoutY="275.0" prefHeight="26.0" prefWidth="231.0" promptText="Select Timing" />
+      <Label fx:id="FValidate" layoutX="360.0" layoutY="57.0" opacity="0.0" prefHeight="27.0" prefWidth="114.0" text="Fname V" />
+      <Label fx:id="LValidate" layoutX="360.0" layoutY="94.0" opacity="0.0" prefHeight="27.0" prefWidth="114.0" text="Lname V" />
+      <Label fx:id="DateValidate" layoutX="360.0" layoutY="237.0" opacity="0.0" prefHeight="27.0" prefWidth="114.0" text="Date V" />
+      <Label fx:id="TimeValidate" layoutX="360.0" layoutY="275.0" opacity="0.0" prefHeight="27.0" prefWidth="114.0" text="Time V" />
+      <Label fx:id="ServValidate" layoutX="360.0" layoutY="317.0" opacity="0.0" prefHeight="27.0" prefWidth="114.0" text="ToF V" />
+      <Label layoutX="21.0" layoutY="56.0" prefHeight="27.0" prefWidth="102.0" text="First Name" />
+      <Label layoutX="14.0" layoutY="93.0" prefHeight="27.0" prefWidth="102.0" text="Last Name" />
+      <Label layoutX="14.0" layoutY="234.0" prefHeight="27.0" prefWidth="102.0" text="Appointment Date" />
+      <Label layoutX="14.0" layoutY="273.0" prefHeight="27.0" prefWidth="159.0" text="Schedule Timing" />
+      <Label layoutX="14.0" layoutY="314.0" prefHeight="27.0" prefWidth="159.0" text="Type of Service" />
+      <TextField fx:id="PhoneNumBox" layoutX="123.0" layoutY="130.0" prefHeight="26.0" prefWidth="231.0" promptText="Enter Phone Number" />
+      <Label fx:id="VPhoneNum" layoutX="360.0" layoutY="130.0" opacity="0.0" prefHeight="27.0" prefWidth="114.0" text="Phone V" />
+      <TextField fx:id="txt_Numeric" layoutX="123.0" layoutY="165.0" prefHeight="25.0" prefWidth="231.0" promptText="Enter Email Address" />
+      <Label fx:id="text_email" layoutX="360.0" layoutY="165.0" opacity="0.0" prefHeight="49.0" prefWidth="129.0" text="Email V">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="VPhoneNumFormat" layoutX="360.0" layoutY="130.0" opacity="0.0" prefHeight="49.0" prefWidth="114.0" text="Phone V">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="164.0" prefHeight="27.0" prefWidth="102.0" text="Email Address" />
+      <Label layoutX="14.0" layoutY="199.0" prefHeight="27.0" prefWidth="102.0" text="Gender" />
+      <RadioButton fx:id="maleradio" layoutX="170.0" layoutY="204.0" mnemonicParsing="false" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="Gender" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="femaleradio" layoutX="227.0" layoutY="204.0" mnemonicParsing="false" text="Female" toggleGroup="$Gender" />
+      <Label fx:id="genderlabel" layoutX="290.0" layoutY="209.0" opacity="0.0" prefHeight="25.0" prefWidth="129.0" text="genderlabel" />
+      <TableView fx:id="AppointmentInfo" layoutX="445.0" layoutY="59.0" prefHeight="487.0" prefWidth="814.0">
+        <columns>
+          <TableColumn fx:id="firstNameColumn" minWidth="15.0" prefWidth="75.0" text="First Name" />
+          <TableColumn fx:id="lastNameColumn" minWidth="15.0" prefWidth="94.0" text="Last Name" />
+            <TableColumn fx:id="phoneColumn" minWidth="15.0" prefWidth="98.0" text="Phone Number" />
+            <TableColumn fx:id="emailColumn" minWidth="15.0" prefWidth="158.0" text="Email Address" />
+            <TableColumn fx:id="genderColumn" minWidth="15.0" prefWidth="81.0" text="Gender" />
+            <TableColumn minWidth="15.0" prefWidth="109.0" text="Appointment Date" />
+            <TableColumn minWidth="15.0" prefWidth="110.0" text="Appointment Time" />
+            <TableColumn minWidth="15.0" prefWidth="88.0" text="Time of Service" />
+        </columns>
+      </TableView>
+      <Button fx:id="deleteButton" layoutX="1092.0" layoutY="563.0" mnemonicParsing="false" onAction="#clearButton" prefHeight="25.0" prefWidth="129.0" text="Delete " />
+      <Button fx:id="modifyButton" layoutX="936.0" layoutY="563.0" mnemonicParsing="false" onAction="#clearButton" prefHeight="25.0" prefWidth="129.0" text="Modify" />
    </children>
 </AnchorPane>

@@ -100,10 +100,10 @@
                   <Image url="@customers.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="569.0" layoutY="85.0" fx:id="invalidFirstName"/>
-            <Label layoutX="569.0" layoutY="119.0" fx:id="invalidLastName"/>
-            <Label layoutX="569.0" layoutY="153.0" fx:id="invalidPhone"/>
-            <Label layoutX="569.0" layoutY="189.0" fx:id="invalidEmail" />
+            <Label fx:id="invalidFirstName" layoutX="569.0" layoutY="85.0" />
+            <Label fx:id="invalidLastName" layoutX="569.0" layoutY="119.0" />
+            <Label fx:id="invalidPhone" layoutX="569.0" layoutY="153.0" />
+            <Label fx:id="invalidEmail" layoutX="569.0" layoutY="189.0" />
       </children>
     </AnchorPane>
   </children>

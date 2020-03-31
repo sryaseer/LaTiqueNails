@@ -14,7 +14,6 @@ public class ServicesAndDiscountsController extends DatabaseOperator implements 
     }
 
     public void backButtonClicked(ActionEvent event) throws IOException {
-        SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(1,event);
+        ChangeScene("dashboard.fxml",event);
     }
 }

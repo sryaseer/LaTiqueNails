@@ -15,49 +15,35 @@ public class DashboardController extends DatabaseOperator implements Initializab
     }
 
     public void appointmentClicked(ActionEvent event) throws IOException{
-        SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(5, event);
+        ChangeScene("Appointment.fxml", event);
     }
 
     public void customerInfoClicked(ActionEvent event) throws IOException{
-        SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(6,event);
+        ChangeScene("AddCustomers.fxml",event);
     }
 
     public void employeeInfoClicked(ActionEvent event) throws IOException{
-        SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(7,event);
+        ChangeScene("AddEmployee.fxml",event);
     }
 
     public void discountPromotionClicked(ActionEvent event) throws IOException{
-        SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(8,event);
+        ChangeScene("ServicesAndDiscounts.fxml",event);
     }
 
     public void invoiceClicked(ActionEvent event) throws IOException{
-        SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(9,event);
+        ChangeScene("Invoice.fxml",event);
     }
 
     public void reportClicked(ActionEvent event) throws IOException{
-        SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(10,event);
+        ChangeScene("Report.fxml",event);
     }
-/*
-    //don't know where goes to
-    //Rizz: We will ignore this for now
-    public void serviceClicked(ActionEvent event) throws IOException{
-        SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(11,event);
-    }
-*/
+
     public void accountAccessClicked(ActionEvent event) throws IOException{
-        SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(11,event);
+        ChangeScene("LoginButtonDashboard.fxml",event);
     }
 
     public void logOutClicked(ActionEvent event) throws IOException{
-        SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(3,event);
+        ChangeScene("Login Page.fxml",event);
     }
+
 }

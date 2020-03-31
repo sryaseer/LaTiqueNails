@@ -13,7 +13,6 @@ public class AddEmployeeController extends DatabaseOperator implements Initializ
 
     }
     public void backButtonClicked(ActionEvent event) throws IOException {
-        SceneChanger sc = new SceneChanger();
-        sc.ChangeScene(1,event);
+        ChangeScene("dashboard.fxml",event);
     }
 }

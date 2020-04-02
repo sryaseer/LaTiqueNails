@@ -85,9 +85,9 @@
             <TableColumn fx:id="phoneColumn" minWidth="15.0" prefWidth="98.0" text="Phone Number" />
             <TableColumn fx:id="emailColumn" minWidth="15.0" prefWidth="158.0" text="Email Address" />
             <TableColumn fx:id="genderColumn" minWidth="15.0" prefWidth="81.0" text="Gender" />
-            <TableColumn minWidth="15.0" prefWidth="109.0" text="Appointment Date" />
-            <TableColumn minWidth="15.0" prefWidth="110.0" text="Appointment Time" />
-            <TableColumn minWidth="15.0" prefWidth="88.0" text="Time of Service" />
+            <TableColumn minWidth="15.0" prefWidth="82.0" text="Date" />
+            <TableColumn minWidth="15.0" prefWidth="104.0" text="Time" />
+            <TableColumn minWidth="15.0" prefWidth="121.0" text="Time of Service" />
         </columns>
       </TableView>
       <Button fx:id="deleteButton" layoutX="1092.0" layoutY="563.0" mnemonicParsing="false" onAction="#clearButton" prefHeight="25.0" prefWidth="129.0" text="Delete " />

@@ -19,6 +19,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Connection;
 import java.sql.Statement;
 import java.util.ResourceBundle;
 
@@ -56,6 +57,9 @@ public class Controller extends DatabaseOperator implements Initializable {
             ChangeScene("dashboard.fxml",event);
             // -End example code-
 
+            //test connect to db
+            //Connection conn = ConnectToDatabase();
+            //
         }
         else {
             StatusLbl.setTextAlignment(TextAlignment.RIGHT);

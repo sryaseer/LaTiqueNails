@@ -10,5 +10,6 @@
     <orderEntry type="library" name="Derby" level="project" />
     <orderEntry type="library" name="JavaFX" level="project" />
     <orderEntry type="library" name="jfoenix-9.0.8" level="project" />
+    <orderEntry type="library" name="mssql-jdbc-8.2.2.jre11" level="project" />
   </component>
 </module>

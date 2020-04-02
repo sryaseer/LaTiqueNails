@@ -9,11 +9,35 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 public class DatabaseOperator {
     //Database connections made from this class, so no need to copy and paste this stuff into each new class.
     //please extend DatabaseOperator to your controller class if you create a new one.
+
+
+
+            String connectionUrl =
+                    "jdbc:sqlserver://cot-cis3365-13.cougarnet.uh.edu:1433;"
+                            + "database=AdventureWorks;"
+                            + "user=;"
+                            + "password=;"
+                            + "encrypt=true;"
+                            + "trustServerCertificate=false;"
+                            + "loginTimeout=30;";
+
+            public Connection ConnectToDatabase() {
+                try (Connection connection = DriverManager.getConnection(connectionUrl);) {
+                    return connection;
+                }
+                // Handle any errors that may have occurred.
+                catch (SQLException e) {
+                    e.printStackTrace();
+                    System.out.println(e.getMessage());
+                }
+                return null;
+            }
 
 
     final String hostname = "";
